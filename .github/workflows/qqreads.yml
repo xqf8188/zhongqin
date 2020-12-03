@@ -15,9 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-        QQREAD_HEADER: ${{ secrets.QQREAD_HEADER }}      //qqreadheaderVal
-        QQREAD_TIMEURL: ${{ secrets.QQREAD_TIMEURL }}    //qqreadtimeurlVal
-        QQREAD_TIMEHD: ${{ secrets.QQREAD_TIMEHD }}      //qqreadtimeheaderVal
+        QQREAD_HEADER: ${{ secrets.QQREAD_HEADER }}      
+        QQREAD_TIMEURL: ${{ secrets.QQREAD_TIMEURL }}   
+        QQREAD_TIMEHD: ${{ secrets.QQREAD_TIMEHD }}     
         
     steps:
       - name: Checkout
@@ -39,12 +39,12 @@ jobs:
           node Task/qqreads.js        
         env:
           
-          PUSH_KEY: ${{ secrets.PUSH_KEY }}         //此处设置github action用户填写到Settings-Secrets里面(Name输入PUSH_KEY)
-          BARK_PUSH: ${{ secrets.BARK_PUSH }}       //此处填你BarkAPP的信息(IP/设备码，例如：https://api.day.app/XXXXXXXX)
-          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}   //注：此处设置github action用户填写到Settings-Secrets里面(Name输入TG_BOT_TOKEN)
-          TG_USER_ID: ${{ secrets.TG_USER_ID }}   //注：此处设置github action用户填写到Settings-Secrets里面(Name输入TG_USER_ID)
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}         
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}       
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}   
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}  
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
-          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}  //注：此处设置github action用户填写到Settings-Secrets里面(Name输入DD_BOT_TOKEN)
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}  
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
 
     
