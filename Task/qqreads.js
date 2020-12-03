@@ -193,14 +193,14 @@ qqreadbox();//宝箱
 //else if (i==8&&task.data.taskList[0].doneFlag==0)
 //qqreaddayread();//阅读任务
 
-else if (i==9&&task.data.taskList[1].doneFlag==0)
-qqreadssr2();//阅读金币2
+//else if (i==9&&task.data.taskList[1].doneFlag==0)
+//qqreadssr2();//阅读金币2
 
-else if (i==10&&task.data.taskList[3].doneFlag==0)
-qqreadvideo();//视频任务
+//else if (i==10&&task.data.taskList[3].doneFlag==0)
+//qqreadvideo();//视频任务
 
-else if(i==11&&task.data.taskList[2].doneFlag==0)
-qqreadsign2();//签到翻倍
+//else if(i==11&&task.data.taskList[2].doneFlag==0)
+//qqreadsign2();//签到翻倍
 
 else if (i==12&&task.data.treasureBox.videoDoneFlag==0)
 qqreadbox2();//宝箱翻倍
