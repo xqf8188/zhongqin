@@ -6,7 +6,7 @@ name: 企鹅读书          //AC任务名
 on:
   workflow_dispatch:
   schedule:
-     - cron: '*/11 * * * *'     //定时
+     - cron: '*/11 * * * *'    
   watch:
     types: started
 
