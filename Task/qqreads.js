@@ -162,7 +162,7 @@ function all(){
       qqreadheaderVal = qqreadhdArr[K];
       qqreadtimeurlVal = qqreadtimeurlArr[K];
       qqreadtimeheaderVal = qqreadtimehdArr[K];
-   for(var i=0;i<7;i++)
+   for(var i=0;i<12;i++)
  { (function(i) {
             setTimeout(function() {
 
@@ -175,34 +175,34 @@ qqreadinfo();//用户名
 else if (i==1)
 qqreadtask();//任务列表
 
-//else if (i==3&&task.data.taskList[2].doneFlag==0)
+else if (i==2&&task.data.taskList[2].doneFlag==0)
 //qqreadsign();//金币签到
 
-else if (i==2&&task.data.treasureBox.doneFlag==0)
+else if (i==3&&task.data.treasureBox.doneFlag==0)
 qqreadbox();//宝箱
 
-//else if (i==5&&task.data.taskList[1].doneFlag==0)
+else if (i==4&&task.data.taskList[1].doneFlag==0)
 //qqreadssr1();//阅读金币1
 
 //else if (i==6&&config.data.pageParams.todayReadSeconds/3600<=maxtime)
 //qqreadtime();//上传时长
 
-//else if (i==7&&task.data.taskList[2].doneFlag==0)
-//qqreadtake();//阅豆签到
+else if (i==5&&task.data.taskList[2].doneFlag==0)
+qqreadtake();//阅豆签到
 
-//else if (i==8&&task.data.taskList[0].doneFlag==0)
-//qqreaddayread();//阅读任务
+else if (i==6&&task.data.taskList[0].doneFlag==0)
+qqreaddayread();//阅读任务
 
-//else if (i==9&&task.data.taskList[1].doneFlag==0)
-//qqreadssr2();//阅读金币2
+else if (i==7&&task.data.taskList[1].doneFlag==0)
+qqreadssr2();//阅读金币2
 
-//else if (i==10&&task.data.taskList[3].doneFlag==0)
-//qqreadvideo();//视频任务
+else if (i==8&&task.data.taskList[3].doneFlag==0)
+qqreadvideo();//视频任务
 
-//else if(i==11&&task.data.taskList[2].doneFlag==0)
-//qqreadsign2();//签到翻倍
+else if(i==9&&task.data.taskList[2].doneFlag==0)
+qqreadsign2();//签到翻倍
 
-else if (i==5&&task.data.treasureBox.videoDoneFlag==0)
+else if (i==10&&task.data.treasureBox.videoDoneFlag==0)
 qqreadbox2();//宝箱翻倍
 
 //else if (i==13&&task.data.taskList[1].doneFlag==0)
@@ -214,10 +214,10 @@ qqreadbox2();//宝箱翻倍
 //else if (i==15)
 //qqreadpick();//领周时长奖励
 		 
-else if (i == 6 && K < qqreadhdArr.length - 1) {
+else if (i == 11 && K < qqreadhdArr.length - 1) {
 K += 1;
 all();
- } else if (i == 6 && K == qqreadhdArr.length - 1) {
+ } else if (i == 11 && K == qqreadhdArr.length - 1) {
 	 showmsg();//通知
 	 console.log(tz)  
             $.done();
