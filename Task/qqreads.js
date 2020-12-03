@@ -162,7 +162,7 @@ function all(){
       qqreadheaderVal = qqreadhdArr[K];
       qqreadtimeurlVal = qqreadtimeurlArr[K];
       qqreadtimeheaderVal = qqreadtimehdArr[K];
-   for(var i=0;i<8;i++)
+   for(var i=0;i<7;i++)
  { (function(i) {
             setTimeout(function() {
 
@@ -178,7 +178,7 @@ qqreadtask();//任务列表
 //else if (i==3&&task.data.taskList[2].doneFlag==0)
 //qqreadsign();//金币签到
 
-else if (i==3&&task.data.treasureBox.doneFlag==0)
+else if (i==2&&task.data.treasureBox.doneFlag==0)
 qqreadbox();//宝箱
 
 //else if (i==5&&task.data.taskList[1].doneFlag==0)
@@ -202,7 +202,7 @@ qqreadbox();//宝箱
 //else if(i==11&&task.data.taskList[2].doneFlag==0)
 //qqreadsign2();//签到翻倍
 
-else if (i==6&&task.data.treasureBox.videoDoneFlag==0)
+else if (i==5&&task.data.treasureBox.videoDoneFlag==0)
 qqreadbox2();//宝箱翻倍
 
 //else if (i==13&&task.data.taskList[1].doneFlag==0)
@@ -214,10 +214,10 @@ qqreadbox2();//宝箱翻倍
 //else if (i==15)
 //qqreadpick();//领周时长奖励
 		 
-else if (i == 7 && K < qqreadhdArr.length - 1) {
+else if (i == 6 && K < qqreadhdArr.length - 1) {
 K += 1;
 all();
- } else if (i == 7 && K == qqreadhdArr.length - 1) {
+ } else if (i == 6 && K == qqreadhdArr.length - 1) {
 	 showmsg();//通知
 	 console.log(tz)  
             $.done();
