@@ -184,8 +184,8 @@ qqreadbox();//宝箱
 else if (i==5&&task.data.taskList[1].doneFlag==0)
 qqreadssr1();//阅读金币1
 
-else if (i==6&&config.data.pageParams.todayReadSeconds/3600<=maxtime)
-qqreadtime();//上传时长
+//else if (i==6&&config.data.pageParams.todayReadSeconds/3600<=maxtime)
+//qqreadtime();//上传时长
 
 else if (i==7&&task.data.taskList[2].doneFlag==0)
 qqreadtake();//阅豆签到
