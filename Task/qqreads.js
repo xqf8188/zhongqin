@@ -187,11 +187,11 @@ qqreadbox();//宝箱
 //else if (i==6&&config.data.pageParams.todayReadSeconds/3600<=maxtime)
 //qqreadtime();//上传时长
 
-else if (i==7&&task.data.taskList[2].doneFlag==0)
-qqreadtake();//阅豆签到
+//else if (i==7&&task.data.taskList[2].doneFlag==0)
+//qqreadtake();//阅豆签到
 
-else if (i==8&&task.data.taskList[0].doneFlag==0)
-qqreaddayread();//阅读任务
+//else if (i==8&&task.data.taskList[0].doneFlag==0)
+//qqreaddayread();//阅读任务
 
 else if (i==9&&task.data.taskList[1].doneFlag==0)
 qqreadssr2();//阅读金币2
