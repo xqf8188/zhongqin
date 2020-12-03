@@ -164,7 +164,7 @@ function all(){
       qqreadheaderVal = qqreadhdArr[K];
       qqreadtimeurlVal = qqreadtimeurlArr[K];
       qqreadtimeheaderVal = qqreadtimehdArr[K];
-   for(var i=0;i<17;i++)
+   for(var i=0;i<8;i++)
  { (function(i) {
             setTimeout(function() {
 
@@ -173,25 +173,25 @@ qqreadinfo();//用户名
 
  
 
-else if (i==2)
+else if (i==1)
 qqreadtask();//任务列表
 
 
-else if (i==3&&task.data.treasureBox.doneFlag==0)
+else if (i==2&&task.data.treasureBox.doneFlag==0)
 qqreadbox();//宝箱
 
 
 
 
-else if (i==12&&task.data.treasureBox.videoDoneFlag==0)
+else if (i==6&&task.data.treasureBox.videoDoneFlag==0)
 qqreadbox2();//宝箱翻倍
 
 
 		 
-else if (i == 16 && K < qqreadhdArr.length - 1) {
+else if (i == 7 && K < qqreadhdArr.length - 1) {
 K += 1;
 all();
- } else if (i == 16 && K == qqreadhdArr.length - 1) {
+ } else if (i == 7 && K == qqreadhdArr.length - 1) {
 	 showmsg();//通知
 	 console.log(tz)  
             $.done();
