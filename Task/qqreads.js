@@ -169,8 +169,8 @@ function all(){
      if (i==0)
 qqreadinfo();//用户名
 
- else if (i==1)
-qqreadconfig();//时长查询
+ //else if (i==1)
+//qqreadconfig();//时长查询
 
 else if (i==2)
 qqreadtask();//任务列表
