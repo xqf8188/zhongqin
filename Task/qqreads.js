@@ -166,7 +166,7 @@ function all(){
  { (function(i) {
             setTimeout(function() {
 
-     if (i==0)
+     if (i==0){
 qqreadinfo();//用户名
 
  //else if (i==1)
@@ -174,7 +174,7 @@ qqreadinfo();//用户名
 
 //else if (i==1)
 qqreadtask();//任务列表
-
+}
 //else if (i==3&&task.data.taskList[2].doneFlag==0)
 //qqreadsign();//金币签到
 
