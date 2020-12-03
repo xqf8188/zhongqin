@@ -176,7 +176,7 @@ else if (i==2)
 qqreadtask();//任务列表
 
 //else if (i==3&&task.data.taskList[2].doneFlag==0)
-qqreadsign();//金币签到
+//qqreadsign();//金币签到
 
 else if (i==4&&task.data.treasureBox.doneFlag==0)
 qqreadbox();//宝箱
